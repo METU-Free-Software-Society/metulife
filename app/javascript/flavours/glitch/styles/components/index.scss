@@ -906,6 +906,14 @@
 .getting-started__wrapper {
   position: relative;
   overflow-y: auto;
+
+  p, audio {
+    padding-left: 10px;
+  }
+
+  audio {
+    padding-top: 10px;
+  }
 }
 
 .flex-spacer {
@@ -1684,6 +1692,7 @@ noscript {
 @import 'search';
 @import 'emoji';
 @import 'doodle';
+@import 'giphy';
 @import 'drawer';
 @import 'media';
 @import 'sensitive';

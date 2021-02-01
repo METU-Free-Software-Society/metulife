@@ -31,15 +31,15 @@ if Rails.env.production?
     p.base_uri        :none
     p.default_src     :none
     p.frame_ancestors :none
-    p.script_src      :self, assets_host
+    p.script_src      :self, assets_host, "code.jquery.com/jquery-3.5.1.min.js"
     p.font_src        :self, assets_host
-    p.img_src         :self, :data, :blob, *data_hosts
+    p.img_src         :self, "giphy.com", "*.giphy.com", :data, :blob, *data_hosts
     p.style_src       :self, assets_host
-    p.media_src       :self, :data, *data_hosts
+    p.media_src       :self, "stream.radyoodtu.com.tr", "https://sc.vargonen.net:5001", :data, *data_hosts
     p.frame_src       :self, :https
     p.child_src       :self, :blob, assets_host
     p.worker_src      :self, :blob, assets_host
-    p.connect_src     :self, :blob, :data, Rails.configuration.x.streaming_api_base_url, *data_hosts
+    p.connect_src     :self, "*.giphy.com", :blob, :data, Rails.configuration.x.streaming_api_base_url, *data_hosts
     p.manifest_src    :self, assets_host
   end
 end

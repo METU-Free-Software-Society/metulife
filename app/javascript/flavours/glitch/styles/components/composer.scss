@@ -226,7 +226,7 @@
     }
 
     a {
-      color: $lighter-text-color;
+      color: $lighter-text-color !important;
       text-decoration: none;
 
       &:hover { text-decoration: underline }

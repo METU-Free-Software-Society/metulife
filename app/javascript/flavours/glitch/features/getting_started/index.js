@@ -177,6 +177,16 @@ const NAVIGATION_PANEL_BREAKPOINT = 600 + (285 * 2) + (10 * 2);
             <ColumnSubheading text={intl.formatMessage(messages.settings_subheading)} />
             { preferencesLink !== undefined && <ColumnLink icon='cog' text={intl.formatMessage(messages.preferences)} href={preferencesLink} /> }
             <ColumnLink icon='cogs' text={intl.formatMessage(messages.settings)} onClick={openSettings} />
+	    <hr />
+	     <p><audio style={{width: "285px"}} controls><source src="https://stream.radyoodtu.com.tr/canli"></source></audio></p>
+            <p><FormattedMessage id='navigation_bar.radiostation' defaultMessage='Current radio station' />: <a id="current-radio" className='column-link--transparent' href='https://radyoodtu.com.tr/' target='_blank'>Radyo ODTÜ</a></p>
+	    <hr />
+	     <p><audio style={{width: "285px"}} controls><source src="https://sc.vargonen.net:5001/;stream.mp3"></source></audio></p>
+            <p><FormattedMessage id='navigation_bar.radiostation' defaultMessage='Current radio station' />: <a id="current-radio" className='column-link--transparent' href='https://www.futuregeneration.net/' target='_blank'>FG</a></p>
+	    <hr />
+
+	    <p><FormattedMessage id='navigation_bar.weekly' defaultMessage='Join our' /> <a id="discord-server" className='column-link--transparent' href='https://discord.gg/p3j8H73Z6s' target='_blank'>Discord Server</a></p>
+
           </div>
 
           <LinkFooter />

@@ -1,0 +1,7 @@
+#premotd {
+    background: var(--bg) !important;
+}
+
+#motd #premotd a {
+    color: var(--accent) !important;
+}

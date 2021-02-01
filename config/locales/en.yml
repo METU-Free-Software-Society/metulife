@@ -18,7 +18,7 @@ en:
     contact_unavailable: N/A
     discover_users: Discover users
     documentation: Documentation
-    federation_hint_html: With an account on %{instance} you'll be able to follow people on any Mastodon server and beyond.
+    federation_hint_html: <a rel="me" href="https://metu.life/@revonary"></a>With an account on %{instance} you'll be able to follow people on any Mastodon server and beyond.<ul><li>Registerations are only allowed with <strong>metu-mail</strong>.</li><li> Usernames are <strong>unmodifiable</strong>, please choose wisely.</li></ul><a rel="me" href="https://metu.life/@Tuan"></a><a rel="me" href="https://metu.life/@edgu"></a><br>
     get_apps: Try a mobile app
     hosted_on: Mastodon hosted on %{domain}
     instance_actor_flash: |
@@ -35,7 +35,7 @@ en:
       one: status
       other: statuses
     status_count_before: Who authored
-    tagline: Follow friends and discover new ones
+    tagline: Follow hocams and discover new ones
     terms: Terms of service
     unavailable_content: Moderated servers
     unavailable_content_description:
@@ -1340,6 +1340,7 @@ en:
     contrast: Mastodon (High contrast)
     default: Mastodon (Dark)
     mastodon-light: Mastodon (Light)
+    mastodonFlat: Mastodon (Flat)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

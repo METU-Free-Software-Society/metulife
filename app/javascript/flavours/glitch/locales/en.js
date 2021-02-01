@@ -1,7 +1,7 @@
 import inherited from 'mastodon/locales/en.json';
 
 const messages = {
-  'getting_started.open_source_notice': 'Glitchsoc is free open source software forked from {Mastodon}. You can contribute or report issues on GitHub at {github}.',
+  'getting_started.open_source_notice': 'Metu Life is free open source software forked from {Mastodon}.', /* You can contribute or report issues on GitHub at {github}.' */
   'layout.auto': 'Auto',
   'layout.current_is': 'Your current layout is:',
   'layout.desktop': 'Desktop',
@@ -53,6 +53,7 @@ const messages = {
 
   'compose.attach.upload': 'Upload a file',
   'compose.attach.doodle': 'Draw something',
+  'compose.attach.gif': 'Embed GIF',
   'compose.attach': 'Attach...',
 
   'advanced_options.local-only.short': 'Local-only',

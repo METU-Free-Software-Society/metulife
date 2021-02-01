@@ -1,0 +1,12 @@
+#premotd {
+    background:$ui-base-color;
+    padding:7px;
+    color: $primary-text-color;
+    margin-top: 30px;
+    border-radius:6px;
+}
+
+#motd #premotd a {
+    color:$highlight-text-color;
+    font-family:monospace;
+}

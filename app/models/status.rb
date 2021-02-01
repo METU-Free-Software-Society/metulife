@@ -406,7 +406,7 @@ class Status < ApplicationRecord
   end
 
   def local_only_emoji
-    '👁'
+    ':tree:'
   end
 
   def status_stat

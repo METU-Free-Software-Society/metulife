@@ -1,0 +1,7 @@
+.mention {
+    color: $ui-primary-color !important
+}
+
+.mention.hashtag, .status__content a.unhandled-link {
+    color: $highlight-text-color
+}

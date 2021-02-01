@@ -73,7 +73,7 @@ class Account < ApplicationRecord
 
   MAX_DISPLAY_NAME_LENGTH = (ENV['MAX_DISPLAY_NAME_CHARS'] || 30).to_i
   MAX_NOTE_LENGTH = (ENV['MAX_BIO_CHARS'] || 500).to_i
-  MAX_FIELDS = (ENV['MAX_PROFILE_FIELDS'] || 4).to_i
+  MAX_FIELDS = (ENV['MAX_PROFILE_FIELDS'] || 8).to_i
 
   TRUST_LEVELS = {
     untrusted: 0,
