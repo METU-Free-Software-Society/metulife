@@ -38,8 +38,10 @@ Mastodon'u (veya eski metu.life versiyonunu) güncellemek, Mastodon versiyonlar�
 3. Gerekli paketleri kurun: `bundle install && yarn install`
 4. Konuşlandırma öncesi veritabanı göçü gerçekleştirin: `RAILS_ENV=production SKIP_POST_DEPLOYMENT_MIGRATIONS=true bundle exec rails db:migrate`
 5. Ön derleme yapınız: `RAILS_ENV=production bundle exec rails assets:precompile`
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bu adım ana Mastodon'a göre daha uzun sürecektir.
-6. Hizmetleri tekrar başlatın: `systemctl reload mastodon-web && systemctl restart mastodon-{sidekiq~~treaming}`
+
+6. Hizmetleri tekrar başlatın: `systemctl reload mastodon-web && systemctl restart mastodon-{sidekiq,streaming}`
 7. Rails önbelleğini temizleyin: `RAILS_ENV=production bin/tootctl cache clear`
 8. Konuşlandırma sonrası veritabanı göçünü gerçekleştirin: `RAILS_ENV=production bundle exec rails db:migrate`
 
