@@ -30,9 +30,10 @@ Mastodon'u (veya eski metu.life versiyonunu) güncellemek, Mastodon versiyonlar�
 
 0. Sunucunuzdaki "mastodon" kullanıcısındaki "live" dizinine geçiş yapın `cd /home/mastodon/live`
 1. metu.life'a geçiş yapın
-  + Yeni bir uzak depo ekleyin `git remote add metu.life https://git.oyd.org.tr/MetuFSS/metu.life`
-  + Depoyu çekin `git fetch metu.life`
-  + `master` adındaki dala geçin `git checkout metu.life/master`
+    + Yeni bir uzak depo ekleyin `git remote add metu.life https://git.oyd.org.tr/MetuFSS/metu.life`
+    + Depoyu çekin `git fetch metu.life`
+    + `master` adındaki dala geçin `git checkout metu.life/master`
+
 2. Kaynak kodunu çekin (genellikle, `git pull`)
 3. Gerekli paketleri kurun: `bundle install && yarn install`
 4. Konuşlandırma öncesi veritabanı göçü gerçekleştirin: `RAILS_ENV=production SKIP_POST_DEPLOYMENT_MIGRATIONS=true bundle exec rails db:migrate`
