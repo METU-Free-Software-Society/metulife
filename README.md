@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://metu.life/img/logo_siyah.svg">
+  <img src="https://metu.life/img/logo_siyah.svg" max-width="60%" max-height="60%">
 </p>
 
 [metu.life](https://metu.life/); ActivityPub protokolü kullanan, [Mastodon](https://github.com/tootsuite/mastodon) tabanlı bir [glitch-soc](https://github.com/glitch-soc/mastodon) çatalıdır ve [koyu.space](https://github.com/koyuspace/mastodon) yamaları barındırır.
