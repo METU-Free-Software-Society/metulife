@@ -1,26 +1,26 @@
----
+
 tr:
   about:
     about_hashtag_html: Bunlar <strong>#%{hashtag}</strong> ile etiketlenen genel tootlar. Fediverse içinde herhangi bir yerde bir hesabınız varsa, onlarla etkileşime geçebilirsiniz.
-    about_mastodon_html: Mastodon <em>ücretsiz ve açık kaynaklı</em> bir sosyal ağdır. <em>Merkezileştirilmemiş</em> yapısı sayesinde diğer ticari sosyal platformların aksine iletişimininizin tek bir firmada tutulmasının/yönetilmesinin önüne geçer. Güvendiğiniz bir sunucuyu seçerek oradaki kişilerle etkileşimde bulunabilirsiniz. Herkes kendi Mastodon sunucusunu kurabilir ve sorunsuz bir şekilde Mastodon <em>sosyal ağına</em> dahil edebilir.
+
     about_this: Hakkında
     active_count_after: etkin
     active_footnote: Aylık Aktif Kullanıcılar (AAK)
     administered_by: 'Yönetici:'
     api: API
     apps: Mobil uygulamalar
-    apps_platforms: İos, Android ve diğer platformlardaki Mastodon'u kullanın
+    apps_platforms: metu.life'ı iOS, Android ve diğer platformlarda kullanın
     browse_directory: Bir profil dizinine göz atın ve ilgi alanlarına göre filtreleyin
     browse_local_posts: Bu sunucudaki herkese açık yayınlara göz atın
-    browse_public_posts: Mastodon'daki herkese açık yayınlara göz atın
+    browse_public_posts: metu.life'taki herkese açık yayınlara göz atın
     contact: İletişim
     contact_missing: Ayarlanmadı
     contact_unavailable: Yok
     discover_users: Hocamları keşfet
     documentation: Belgeler
     federation_hint_html: "%{instance} hesabınızla, herhangi bir Mastodon sunucusundaki ve haricindeki kişileri takip edebilirsiniz. <ul><li><strong>metu.edu.tr</strong> uzantılı e-posta ile kayıt olunuz.</li><li>Kullanıcı adı sonra <strong>değiştirilemez</strong>, seçerken dikkatli olunuz.</li></ul><br>"
-    get_apps: Bir mobil uygulamayı deneyin
-    hosted_on: Mastodon %{domain} üzerinde barındırılıyor
+    get_apps: Mobil uygulamalardan birini deneyin
+    hosted_on: metu.life %{domain} üzerinde barındırılıyor
     instance_actor_flash: |
       Bu hesap, herhangi bir kullanıcıyı değil sunucunun kendisini temsil etmek için kullanılan sanal bir aktördür.
       Federasyon amaçlı kullanılır ve tüm yansıyı engellemek istemediğiniz sürece engellenmemelidir; bu durumda bir etki alanı bloğu kullanmanız gerekir.
@@ -45,12 +45,12 @@ tr:
       silenced_title: Susturulmuş sunucular
       suspended: 'Bu sunuculardaki hiçbir veri işlenmeyecek, saklanmayacak veya değiş tokuş edilmeyecektir, dolayısıyla bu sunuculardaki kullanıcılarla herhangi bir etkileşim ya da iletişim imkansız olacaktır:'
       suspended_title: Askıya alınan sunucular
-    unavailable_content_html: Mastodon, genel olarak fediverse'teki herhangi bir sunucudan içerik görüntülemenize ve kullanıcılarıyla etkileşim kurmanıza izin verir. Bunlar, bu sunucuda yapılmış olan istisnalardır.
+    unavailable_content_html: metu.life, genel olarak fediverse'teki herhangi bir sunucudan içerik görüntülemenize ve kullanıcılarıyla etkileşim kurmanıza izin verir. Bunlar, bu sunucuda yapılmış olan istisnalardır.
     user_count_after:
       one: kullanıcı
       other: kullanıcı
     user_count_before: Kayıtlı
-    what_is_mastodon: Mastodon nedir?
+    what_is_mastodon: metu.life nedir?
   accounts:
     choices_html: "%{name} kişisinin seçimleri:"
     endorsements_hint: Takip ettiğiniz kişileri web arayüzünden onaylayabilirsiniz, burada görünecekler.
@@ -605,14 +605,14 @@ tr:
         desc_html: Harici bilgi sayfasında gösterilir.<br>HTML etiketleri girebilirsiniz
         title: Sunucu hakkında detaylı bilgi
       site_short_description:
-        desc_html: Kenar çubuğunda ve meta etiketlerinde görüntülenir. Mastodon'un ne olduğunu ve bu sunucuyu özel kılan şeyleri tek bir paragrafta açıklayın.
+        desc_html: Kenar çubuğunda ve meta etiketlerinde görüntülenir. metu.life'ın ne olduğunu ve bu sunucuyu özel kılan şeyleri tek bir paragrafta açıklayın.
         title: Kısa sunucu açıklaması
       site_terms:
         desc_html: Kendi gizlilik politikanızı, hizmet şartlarınızı ya da diğer hukuki metinlerinizi yazabilirsiniz. HTML etiketleri kullanabilirsiniz
         title: Özel hizmet şartları
       site_title: Site başlığı
       spam_check_enabled:
-        desc_html: Mastodon, tekrar eden istenmeyen mesajlar gönderen hesapları otomatik olarak susturabilir ve şikayet edebilir. Yanlışlar olabilir.
+        desc_html: metu.life, tekrar eden istenmeyen mesajlar gönderen hesapları otomatik olarak susturabilir ve şikayet edebilir. Yanlışlar olabilir.
         title: Anti-spam otomasyonu
       thumbnail:
         desc_html: OpenGraph ve API ile ön izlemeler için kullanılır. 1200x630px tavsiye edilir
@@ -693,7 +693,7 @@ tr:
     confirmation_dialogs: Onay iletişim kutuları
     discovery: Keşfet
     localization:
-      body: Mastodon, gönüllüler tarafından çevrilmektedir.
+      body: metu.life, gönüllüler tarafından çevrilmektedir.
       guide_link: https://crowdin.com/project/mastodon
       guide_link_text: Herkes katkıda bulunabilir.
     sensitive_content: Hassas içerik
@@ -721,8 +721,8 @@ tr:
     delete_account: Hesabı sil
     delete_account_html: Hesabınızı silmek isterseniz, <a href="%{path}">buradan devam edebilirsiniz </a>. Onaylamanız istenecektir.
     description:
-      prefix_invited_by_user: "@%{name} sizi bu Mastodon sunucusuna katılmaya davet ediyor!"
-      prefix_sign_up: Bugün Mastodon'a kaydolun!
+      prefix_invited_by_user: "@%{name} sizi bu metu.life sunucusuna katılmaya davet ediyor!"
+      prefix_sign_up: Bugün metu.life'a kaydolun!
       suffix: Bir hesapla, kişileri takip edebilir, güncellemeler gönderebilir, herhangi bir Mastodon sunucusundan kullanıcılarla mesaj alışverişinde bulunabilir ve daha birçok şey yapabilirsin!
     didnt_get_confirmation: Doğrulama talimatlarını almadınız mı?
     dont_have_your_security_key: Güvenlik anahtarınız yok mu?
@@ -833,7 +833,7 @@ tr:
       content: Üzgünüz, ancak bir şey ters gitti.
       title: Bu sayfa doğru değil
     '503': Geçici sunucu hatası nedeniyle sayfa görüntülenemedi.
-    noscript_html: Mastodon web uygulamasını kullanmak için lütfen JavaScript'i etkinleştirin. Alternatif olarak, platformunuz için Mastodon <a href="%{apps_path}">yerel uygulamalardan</a> birini deneyin.
+    noscript_html: metu.life web uygulamasını kullanmak için lütfen JavaScript'i etkinleştirin. Alternatif olarak, platformunuz için Mastodon <a href="%{apps_path}">yerel uygulamalardan</a> birini deneyin.
   existing_username_validator:
     not_found: bu kullanıcı adına sahip yerel bir kullanıcı bulunamadı
     not_found_multiple: "%{usernames} bulunamadı"
@@ -1138,7 +1138,7 @@ tr:
       weibo: Weibo
     current_session: Geçerli oturum
     description: "%{platform} - %{browser}"
-    explanation: Bunlar, Mastodon hesabınızda şu anda oturum açmış web tarayıcılarıdır.
+    explanation: Bunlar, metu.life hesabınızda şu anda oturum açmış web tarayıcılarıdır.
     ip: IP
     platforms:
       adobe_air: Adobe Air
@@ -1162,7 +1162,7 @@ tr:
     aliases: Hesap takma adları
     appearance: Görünüm
     authorized_apps: Yetkili uygulamalar
-    back: Mastodon'a geri dön
+    back: metu.life'a geri dön
     delete: Hesap silme
     development: Geliştirme
     edit_profile: Profili düzenle
@@ -1242,7 +1242,7 @@ tr:
       <ul>
       <li><em>Temel hesap bilgileri</em>: Bu sunucuya kaydolursanız, bir kullanıcı adı, bir e-posta adresi ve bir parola girmeniz istenebilir. Ayrıca, ekran adı ve biyografi gibi ek profil bilgileri girebilir ve bir profil fotoğrafı ve başlık resmi yükleyebilirsiniz. Kullanıcı adı, ekran ad, biyografi, profil fotoğrafı ve başlık resmi her zaman herkese açık olarak listelenir.</li>
       <li><em>Gönderiler, takip etmeler ve diğer herkese açık bilgiler</em>: Takip ettiğiniz kişilerin listesi herkese açık olarak listelenir, sizi takip edenler için de aynısı geçerlidir. Bir mesaj gönderdiğinizde, mesajı gönderdiğiniz uygulamanın yanı sıra tarih ve saati de saklanır. Mesajlar, resim ve video gibi medya ekleri içerebilir. Herkese açık ve listelenmemiş gönderiler halka açıktır. Profilinizde bir gönderiyi yayınladığınızda, bu da herkese açık olarak mevcut bir bilgidir. Gönderileriniz takipçilerinize iletilir, bazı durumlarda farklı sunuculara gönderilir ve kopyalar orada saklanır. Gönderilerinizi sildiğinizde, bu da takipçilerinize iletilir. Başka bir gönderiyi yeniden bloglama veya favorileme eylemi her zaman halka açıktır.</li>
-      <li><em>Doğrudan ve takipçilere özel gönderiler</em>: Tüm gönderiler sunucuda saklanır ve işlenir. Takipçilere özel gönderiler, takipçilerinize ve içinde bahsedilen kullanıcılara, doğrudan gönderiler ise yalnızca içinde bahsedilen kullanıcılara iletilir. Bu, bazı durumlarda farklı sunuculara iletildiği ve kopyaların orada saklandığı anlamına gelir. Bu gönderilere erişimi yalnızca yetkili kişilerle sınırlamak için iyi niyetle çalışıyoruz, ancak diğer sunucular bunu yapamayabilir. Bu nedenle, takipçilerinizin ait olduğu sunucuları incelemek önemlidir. Ayarlarda yeni izleyicileri manuel olarak onaylama ve reddetme seçeneğini değiştirebilirsiniz. <em>Sunucuyu ve alıcı sunucuyu işleten kişilerin bu mesajları görüntüleyebileceğini unutmayın</em>, ve alıcılar ekran görüntüsü alabilir, kopyalayabilir veya başka bir şekilde yeniden paylaşabilir. <em>Mastodon üzerinden herhangi bir tehlikeli bilgi paylaşmayın.</em></li>
+      <li><em>Doğrudan ve takipçilere özel gönderiler</em>: Tüm gönderiler sunucuda saklanır ve işlenir. Takipçilere özel gönderiler, takipçilerinize ve içinde bahsedilen kullanıcılara, doğrudan gönderiler ise yalnızca içinde bahsedilen kullanıcılara iletilir. Bu, bazı durumlarda farklı sunuculara iletildiği ve kopyaların orada saklandığı anlamına gelir. Bu gönderilere erişimi yalnızca yetkili kişilerle sınırlamak için iyi niyetle çalışıyoruz, ancak diğer sunucular bunu yapamayabilir. Bu nedenle, takipçilerinizin ait olduğu sunucuları incelemek önemlidir. Ayarlarda yeni izleyicileri manuel olarak onaylama ve reddetme seçeneğini değiştirebilirsiniz. <em>Sunucuyu ve alıcı sunucuyu işleten kişilerin bu mesajları görüntüleyebileceğini unutmayın</em>, ve alıcılar ekran görüntüsü alabilir, kopyalayabilir veya başka bir şekilde yeniden paylaşabilir. <em>metu.life üzerinden herhangi bir tehlikeli bilgi paylaşmayın.</em></li>
       <li><em>IP'ler ve diğer meta veriler</em>: Oturum açarken, giriş yaptığınız IP adresini ve tarayıcı uygulamanızın adını kaydederiz. Giriş yapılan tüm oturumlar, incelemek ve iptal etmek için ayarlarda mevcuttur. En son kullanılan IP adresi 12 aya kadar saklanır. Sunucumuza gelen her isteğin IP adresini içeren sunucu loglarını da saklayabiliriz.</li>
       </ul>
 
@@ -1253,7 +1253,7 @@ tr:
       <p>Sizden topladığımız bilgilerin herhangi bir kısmı aşağıdaki şekillerde kullanılabilir:</p>
 
       <ul>
-      <li>Mastodon'un ana işlevselliğini sağlamak için. Yalnızca oturum açtığınızda diğer kişilerin içeriğiyle etkileşime girebilir ve kendi içeriğinizi gönderebilirsiniz. Örneğin, başkalarının kombine gönderilerini kendi kişiselleştirilmiş ana sayfanızdaki zaman çizelgenizde görüntülemek için onları takip edebilirsiniz.</li>
+      <li>metu.life'ın ana işlevselliğini sağlamak için. Yalnızca oturum açtığınızda diğer kişilerin içeriğiyle etkileşime girebilir ve kendi içeriğinizi gönderebilirsiniz. Örneğin, başkalarının kombine gönderilerini kendi kişiselleştirilmiş ana sayfanızdaki zaman çizelgenizde görüntülemek için onları takip edebilirsiniz.</li>
       <li>Topluluğun denetlenmesine yardımcı olmak için, örneğin, yasaktan kaçınma veya diğer ihlalleri belirlemek için IP adresinizin diğer bilinen adreslerle karşılaştırılması.</li>
       <li>Verdiğiniz e-posta adresi, size bilgi, içeriğinizle etkileşimde bulunan diğer kişilerle ilgili bildirimler veya mesaj göndermek, sorgulara ve/veya diğer istek ve sorulara cevap vermek için kullanılabilir.</li>
       </ul>
@@ -1318,9 +1318,9 @@ tr:
       <p><a href="https://github.com/discourse/discourse">Discourse gizlilik politikasından uyarlanmıştır</a>.</p>
     title: "%{instance} Hizmet Şartları ve Gizlilik Politikası"
   themes:
-    contrast: Mastodon (Yüksek karşıtlık)
-    default: Mastodon (Karanlık)
-    mastodon-light: Mastodon (Açık)
+    contrast: metu.life (Yüksek karşıtlık)
+    default: metu.life (Karanlık)
+    mastodon-light: metu.life (Açık)
   time:
     formats:
       default: "%d %b %Y %H:%M"
@@ -1342,7 +1342,7 @@ tr:
     webauthn: Güvenlik anahtarları
   user_mailer:
     backup_ready:
-      explanation: Mastodon hesabınızın tam yedeğini istemiştiniz. Şimdi indirilebilir durumda!
+      explanation: metu.life hesabınızın tam yedeğini istemiştiniz. Şimdi indirilebilir durumda!
       subject: Arşiviniz indirilmeye hazır
       title: Arşiv paketlemesi
     sign_in_token:
@@ -1382,11 +1382,11 @@ tr:
       full_handle_hint: Arkadaşlarınıza, size başka bir sunucudan mesaj atabilmeleri veya sizi takip edebilmeleri için söyleyeceğiniz şey budur.
       review_preferences_action: Tercihleri değiştirin
       review_preferences_step: Hangi e-postaları almak veya gönderilerinizin varsayılan olarak hangi gizlilik seviyesinde olmasını istediğiniz gibi tercihlerinizi ayarladığınızdan emin olun. Hareket hastalığınız yoksa, GIF otomatik oynatmayı etkinleştirmeyi seçebilirsiniz.
-      subject: Mastodon'a hoş geldiniz
-      tip_federated_timeline: Federe zaman tüneli, Mastodon ağının genel bir görüntüsüdür. Ancak yalnızca komşularınızın abone olduğu kişileri içerir, bu yüzden tamamı değildir.
+      subject: metu.life'a hoş geldiniz
+      tip_federated_timeline: Federe zaman tüneli, metu.life ağının genel bir görüntüsüdür. Ancak yalnızca komşularınızın abone olduğu kişileri içerir, bu yüzden tamamı değildir.
       tip_following: Sunucu yönetici(ler)ini varsayılan olarak takip edersiniz. Daha ilginç insanlar bulmak için yerel ve federe zaman çizelgelerini kontrol edin.
       tip_local_timeline: Yerel zaman çizelgesi, %{instance} üzerindeki kişilerin genel bir görüntüsüdür. Bunlar senin en yakın komşularındır!
-      tip_mobile_webapp: Mobil tarayıcınız size ana ekranınıza Mastodon eklemenizi önerirse, push bildirimleri alabilirsiniz. Birçok yönden yerli bir uygulama gibi davranır!
+      tip_mobile_webapp: Mobil tarayıcınız size ana ekranınıza metu.life eklemenizi önerirse, push bildirimleri alabilirsiniz. Birçok yönden yerli bir uygulama gibi davranır!
       tips: İpuçları
       title: Gemiye hoşgeldin, %{name}!
   users:
@@ -1402,7 +1402,7 @@ tr:
     signed_in_as: 'Oturum açtı:'
     suspicious_sign_in_confirmation: Bu cihazdan daha önce oturum açmamış gibi görünüyorsunuz ve bir süredir oturum açmamışsınız, bu yüzden kimliğinizi doğrulamak için e-posta adresinize bir güvenlik kodu gönderiyoruz.
   verification:
-    explanation_html: '<strong>Profil meta verisindeki bağlantıların sahibi olarak kendinizi doğrulayabilirsiniz</strong>. Bunun için, link verilen web sitesi Mastodon profilinize geri bir link içermelidir. Geri link bir <code>rel="me"</code> özelliğine sahip <strong>olmalıdır</strong>. Bağlantının metin içeriği önemli değildir. İşte bir örnek:'
+    explanation_html: '<strong>Profil meta verisindeki bağlantıların sahibi olarak kendinizi doğrulayabilirsiniz</strong>. Bunun için, link verilen web sitesi metu.life profilinize geri bir link içermelidir. Geri link bir <code>rel="me"</code> özelliğine sahip <strong>olmalıdır</strong>. Bağlantının metin içeriği önemli değildir. İşte bir örnek:'
     verification: Doğrulama
   webauthn_credentials:
     add: Yeni güvenlik anahtarı ekle
