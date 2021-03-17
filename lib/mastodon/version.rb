@@ -33,11 +33,11 @@ module Mastodon
     end
 
     def repository
-      ENV.fetch('GITHUB_REPOSITORY', 'glitch-soc/mastodon')
+      ENV.fetch('GITHUB_REPOSITORY', 'source code')
     end
 
     def source_base_url
-      ENV.fetch('SOURCE_BASE_URL', "https://github.com/#{repository}")
+      ENV.fetch('SOURCE_BASE_URL', "https://git.oyd.org.tr/MetuFSS/metu.life")
     end
 
     # specify git tag or commit hash here

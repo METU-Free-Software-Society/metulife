@@ -48,20 +48,21 @@ class LinkFooter extends React.PureComponent {
           {invitesEnabled && <li><a href='/invites' target='_blank'><FormattedMessage id='getting_started.invite' defaultMessage='Invite people' /></a> · </li>}
           {!!securityLink && <li><a href='/auth/edit'><FormattedMessage id='getting_started.security' defaultMessage='Security' /></a> · </li>}
           <li><a href='/about/more' target='_blank'><FormattedMessage id='navigation_bar.info' defaultMessage='About this server' /></a> · </li>
-          <li><a href='https://joinmastodon.org/apps' target='_blank'><FormattedMessage id='navigation_bar.apps' defaultMessage='Mobile apps' /></a> · </li>
+          <li><a href='/apps/index.html' target='_blank'><FormattedMessage id='navigation_bar.apps' defaultMessage='Mobile apps' /></a> · </li>
           <li><a href='/terms' target='_blank'><FormattedMessage id='getting_started.terms' defaultMessage='Terms of service' /></a> · </li>
-          <li><a href='/settings/applications' target='_blank'><FormattedMessage id='getting_started.developers' defaultMessage='Developers' /></a> · </li>
-          <li><a href='https://docs.joinmastodon.org' target='_blank'><FormattedMessage id='getting_started.documentation' defaultMessage='Documentation' /></a> · </li>
+          //<li><a href='/settings/applications' target='_blank'><FormattedMessage id='getting_started.developers' defaultMessage='Developers' /></a> · </li>
+          //<li><a href='https://docs.joinmastodon.org' target='_blank'><FormattedMessage id='getting_started.documentation' defaultMessage='Documentation' /></a> · </li>
           <li><a href={signOutLink} onClick={this.handleLogoutClick}><FormattedMessage id='navigation_bar.logout' defaultMessage='Logout' /></a></li>
         </ul>
 
         <p>
           <FormattedMessage
             id='getting_started.open_source_notice'
-            defaultMessage='Metu.Life is open source software forked from {Mastodon}. You can contribute or report issues on GitHub at {github}.'
+            defaultMessage='Metu.Life is a free as in freedom software forked from {Mastodon}. View our {github}. You can donate at {patreon} to support us.'
             values={{
-              github: <span><a href='https://github.com/glitch-soc/mastodon' rel='noopener noreferrer' target='_blank'>glitch-soc/mastodon</a> (v{version})</span>,
-              Mastodon: <a href='https://github.com/tootsuite/mastodon' rel='noopener noreferrer' target='_blank'>Mastodon</a> }}
+              github: <span><a href='https://git.oyd.org.tr/MetuFSS/metu.life' rel='noopener noreferrer' target='_blank'>source code</a> (v{version})</span>,
+              Mastodon: <a href='https://github.com/glitch-soc/mastodon' rel='noopener noreferrer' target='_blank'>glitch-soc/mastodon</a>,
+              patreon: <a href='https://patreon.com/MetuLife' rel='noopener noreferrer' target='_blank'>Patreon</a> }}
           />
         </p>
       </div>
