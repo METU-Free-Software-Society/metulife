@@ -55,7 +55,7 @@ class LinkFooter extends React.PureComponent {
         <p>
           <FormattedMessage
             id='getting_started.open_source_notice'
-            defaultMessage='Metu.Life is a free as in freedom software forked from {Mastodon}. View our {github}. You can donate at {patreon} to support us.'
+            defaultMessage='metu.life is free -as in freedom- software forked from {Mastodon}. View our {github}. You can donate at {patreon} to support us.'
             values={{
               github: <span><a href='https://git.oyd.org.tr/MetuFSS/metu.life' rel='noopener noreferrer' target='_blank'>source code</a> (v{version})</span>,
               Mastodon: <a href='https://github.com/glitch-soc/mastodon' rel='noopener noreferrer' target='_blank'>glitch-soc/mastodon</a>,

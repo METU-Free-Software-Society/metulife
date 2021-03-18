@@ -8,9 +8,9 @@
   background-size: 128px 128px;
   background-color: #fffbe7;
   background-image: -webkit-gradient(linear, 0 0, 100% 0, color-stop(.5, #08bec6), color-stop(.5, transparent), to(transparent));
-  background-image: -moz-linear-gradient(left, #08bec6 50%, transparent 50%, transparent);
-  background-image: -o-linear-gradient(left, #08bec6 50%, transparent 50%, transparent);
-  background-image: linear-gradient(left, #08bec6 50%, transparent 50%, transparent);
+  background-image: -moz-linear-gradient(to left, #08bec6 50%, transparent 50%, transparent);
+  background-image: -o-linear-gradient(to left, #08bec6 50%, transparent 50%, transparent);
+  background-image: linear-gradient(to left, #08bec6 50%, transparent 50%, transparent);
 }
 /* drawer */
 .drawer__inner,
