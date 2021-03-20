@@ -2,6 +2,8 @@ import React from 'react';
 import Column from 'flavours/glitch/features/ui/components/column';
 import ColumnLink from 'flavours/glitch/features/ui/components/column_link';
 import ColumnSubheading from 'flavours/glitch/features/ui/components/column_subheading';
+import Icon from 'flavours/glitch/components/icon';
+import { NavLink } from 'react-router-dom';
 import { defineMessages, injectIntl, FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { openModal } from 'flavours/glitch/actions/modal';
@@ -38,6 +40,8 @@ const messages = defineMessages({
   misc: { id: 'navigation_bar.misc', defaultMessage: 'Misc' },
   menu: { id: 'getting_started.heading', defaultMessage: 'Getting started' },
   profile_directory: { id: 'getting_started.directory', defaultMessage: 'Profile directory' },
+  radyoodtu: { id: 'navigation_bar.misc', defaultMessage: 'Radyo ODTU' },
+  futuregeneration: { id: 'navigation_bar.misc', defaultMessage: 'Future Generation' },
 });
 
 const makeMapStateToProps = () => {
@@ -172,20 +176,21 @@ const NAVIGATION_PANEL_BREAKPOINT = 600 + (285 * 2) + (10 * 2);
             {!multiColumn && <NavigationBar account={myAccount} />}
             {multiColumn && <ColumnSubheading text={intl.formatMessage(messages.navigation_subheading)} />}
             {navItems}
+	    <div id="motd"></div>
             <ColumnSubheading text={intl.formatMessage(messages.lists_subheading)} />
             {listItems}
             <ColumnSubheading text={intl.formatMessage(messages.settings_subheading)} />
             { preferencesLink !== undefined && <ColumnLink icon='cog' text={intl.formatMessage(messages.preferences)} href={preferencesLink} /> }
             <ColumnLink icon='cogs' text={intl.formatMessage(messages.settings)} onClick={openSettings} />
-	    <hr />
-	     <p><audio style={{width: "285px"}} controls><source src="https://stream.radyoodtu.com.tr/canli"></source></audio></p>
-            <p><FormattedMessage id='navigation_bar.radiostation' defaultMessage='Current radio station' />: <a id="current-radio" className='column-link--transparent' href='https://radyoodtu.com.tr/' target='_blank'>Radyo ODTÜ</a></p>
-	    <hr />
-	     <p><audio style={{width: "285px"}} controls><source src="https://sc.vargonen.net:5001/;stream.mp3"></source></audio></p>
-            <p><FormattedMessage id='navigation_bar.radiostation' defaultMessage='Current radio station' />: <a id="current-radio" className='column-link--transparent' href='https://www.futuregeneration.net/' target='_blank'>FG</a></p>
-	    <hr />
-
-	    <p><FormattedMessage id='navigation_bar.weekly' defaultMessage='Join our' /> <a id="discord-server" className='column-link--transparent' href='https://discord.gg/p3j8H73Z6s' target='_blank'>Discord Server</a></p>
+	    <ColumnSubheading text={intl.formatMessage(messages.radyoodtu)} />
+	    <p><audio style={{width: "285px"}} controls><source src="https://stream.radyoodtu.com.tr/canli"></source></audio></p>
+	    <ColumnSubheading text={intl.formatMessage(messages.futuregeneration)} />
+	    <p><audio style={{width: "285px"}} controls><source src="https://sc.vargonen.net:5001/;stream.mp3"></source></audio></p>
+	    <ColumnSubheading text={intl.formatMessage(messages.misc)} />
+            <a className='column-link' href='/about' target='_blank'><Icon className='column-link__icon' id='lightbulb-o' fixedWidth /><FormattedMessage id='navigation_bar.frontpage' defaultMessage='Think' /></a>
+            <a className='column-link' href='https://discord.gg/p3j8H73Z6s' target='_blank'><Icon className='column-link__icon' id='comments-o' fixedWidth /><FormattedMessage id='navigation_bar.frontpage' defaultMessage='Discord Server' /></a>
+            <a className='column-link' href='/about' target='_blank'><Icon className='column-link__icon' id='external-link' fixedWidth /><FormattedMessage id='navigation_bar.frontpage' defaultMessage='Show front page' /></a>
+	    <NavLink className='column-link' to='/timelines/tag/metulife'><Icon className='column-link__icon' id='hashtag' fixedWidth /><FormattedMessage id='navigation_bar.journal' defaultMessage='metu.life Journal'></FormattedMessage></NavLink>
 
           </div>
 

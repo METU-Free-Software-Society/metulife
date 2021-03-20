@@ -21,7 +21,7 @@ git checkout $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tail -n 1)
 Yukarıdaki adımlar yerine, aşağıdaki komutu kullanın.
 
 ```
-git clone https://git.oyd.org.tr/MetuFSS/metu.life.git && cd live
+git clone https://git.oyd.org.tr/MetuFSS/metu.life.git live && cd live
 ```
 
 ### Var olan Mastodon kurulumunu güncellemek
