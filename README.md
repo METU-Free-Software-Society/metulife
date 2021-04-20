@@ -4,10 +4,13 @@
 
 [metu.life](https://metu.life/); ActivityPub protokolü kullanan, [Mastodon](https://github.com/tootsuite/mastodon) tabanlı bir [glitch-soc](https://github.com/glitch-soc/mastodon) çatalıdır ve [koyu.space](https://github.com/koyuspace/mastodon) yamaları barındırır.
 
-ActivityPub protokolü, sadece metu.life ve Mastodon tabanlı diğer temsillerle değil, bu protokolü kullanan tüm diğer platformlarla  ([PixelFed](https://pixelfed.org/), [PeerTube](https://joinpeertube.org/en/), [Pleroma](https://pleroma.social/) vb.) iletişim kurabilmenizi sağlar.
+ActivityPub protokolü; sadece metu.life ve Mastodon tabanlı diğer temsillerle değil, bu protokolü kullanan tüm diğer platformlarla  ([PixelFed](https://pixelfed.org/), [PeerTube](https://joinpeertube.org/en/), [Pleroma](https://pleroma.social/) vb.) iletişim kurabilmenizi sağlar.
 
 metu.life, AGPLv3 lisanslı özgür bir yazılımdır.
 
+#### Uyarı
+
+Bu proje beta aşamasında olup geliştirilmeye devam edilmektedir.
 
 ## Kurulum
 
@@ -44,7 +47,3 @@ Mastodon'u (veya eski metu.life versiyonunu) güncellemek, Mastodon versiyonlar�
 6. Hizmetleri tekrar başlatın: `systemctl reload mastodon-web && systemctl restart mastodon-{sidekiq,streaming}`
 7. Rails önbelleğini temizleyin: `RAILS_ENV=production bin/tootctl cache clear`
 8. Konuşlandırma sonrası veritabanı göçünü gerçekleştirin: `RAILS_ENV=production bundle exec rails db:migrate`
-
-## Uyarı
-
-Bu proje beta aşamasında olup geliştirilmeye devam edilmektedir.
