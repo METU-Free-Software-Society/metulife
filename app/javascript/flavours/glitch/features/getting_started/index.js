@@ -40,8 +40,8 @@ const messages = defineMessages({
   misc: { id: 'navigation_bar.misc', defaultMessage: 'Misc' },
   menu: { id: 'getting_started.heading', defaultMessage: 'Getting started' },
   profile_directory: { id: 'getting_started.directory', defaultMessage: 'Profile directory' },
-  radyoodtu: { id: 'navigation_bar.misc', defaultMessage: 'Radyo ODTU' },
-  futuregeneration: { id: 'navigation_bar.misc', defaultMessage: 'Future Generation' },
+  radyoodtu: { id: 'navigation_bar.radio1', defaultMessage: 'Radyo ODTU' },
+  futuregeneration: { id: 'navigation_bar.radio2', defaultMessage: 'Future Generation' },
 });
 
 const makeMapStateToProps = () => {
@@ -187,10 +187,10 @@ const NAVIGATION_PANEL_BREAKPOINT = 600 + (285 * 2) + (10 * 2);
 	    <ColumnSubheading text={intl.formatMessage(messages.futuregeneration)} />
 	    <p><audio style={{width: "285px"}} controls><source src="https://sc.vargonen.net:5001/;stream.mp3"></source></audio></p>
 	    <ColumnSubheading text={intl.formatMessage(messages.misc)} />
-            <a className='column-link' href='/about' target='_blank'><Icon className='column-link__icon' id='lightbulb-o' fixedWidth /><FormattedMessage id='navigation_bar.frontpage' defaultMessage='Think' /></a>
-            <a className='column-link' href='https://discord.gg/p3j8H73Z6s' target='_blank'><Icon className='column-link__icon' id='comments-o' fixedWidth /><FormattedMessage id='navigation_bar.frontpage' defaultMessage='Discord Server' /></a>
+            <a className='column-link' href='/about' target='_blank'><Icon className='column-link__icon' id='lightbulb-o' fixedWidth /><FormattedMessage id='navigation_bar.think' defaultMessage='Think' /></a>
+            <a className='column-link' href='https://discord.gg/p3j8H73Z6s' target='_blank'><Icon className='column-link__icon' id='comments-o' fixedWidth /><FormattedMessage id='navigation_bar.discord' defaultMessage='Discord Server' /></a>
             <a className='column-link' href='/about' target='_blank'><Icon className='column-link__icon' id='external-link' fixedWidth /><FormattedMessage id='navigation_bar.frontpage' defaultMessage='Show front page' /></a>
-	    <NavLink className='column-link' to='/timelines/tag/metulife'><Icon className='column-link__icon' id='hashtag' fixedWidth /><FormattedMessage id='navigation_bar.journal' defaultMessage='metu.life Journal'></FormattedMessage></NavLink>
+	    <NavLink className='column-link' to='/timelines/tag/2021METUSpringJournal'><Icon className='column-link__icon' id='hashtag' fixedWidth /><FormattedMessage id='navigation_bar.journal' defaultMessage='Spring Journal'></FormattedMessage></NavLink>
 
           </div>
 
