@@ -1003,7 +1003,7 @@ tr:
     table:
       expires_at: Bitiş tarihi
       uses: Kullanım
-    title: İnsanları davet et
+    title: Hocamları davet et
   lists:
     errors:
       limit: En yüksek liste sayısına ulaştınız
