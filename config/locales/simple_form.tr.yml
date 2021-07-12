@@ -123,10 +123,10 @@ tr:
         avatar: Profil resmi
         bot: Bu bir bot hesabı
         chosen_languages: Dilleri filtrele
-        confirm_new_password: Yeni şifreyi onayla
-        confirm_password: Şifreyi onayla
+        confirm_new_password: Yeni parolayı onayla
+        confirm_password: Parolayı onayla
         context: İçeriği filtrele
-        current_password: Geçerli şifre
+        current_password: Geçerli parola
         data: Veri
         discoverable: Bu hesabı dizinde listele
         display_name: Görünen isim
@@ -140,10 +140,10 @@ tr:
         locale: Arayüz dili
         locked: Hesabı kilitle
         max_uses: Maksimum kullanım sayısı
-        new_password: Yeni şifre
+        new_password: Yeni parola
         note: Kişisel bilgiler
         otp_attempt: İki adımlı doğrulama kodu
-        password: Şifre
+        password: Parola
         phrase: Anahtar kelime veya kelime öbeği
         setting_advanced_layout: Gelişmiş web arayüzünü etkinleştir
         setting_aggregate_reblogs: Zaman çizelgesinde grup boostları

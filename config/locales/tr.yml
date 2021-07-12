@@ -656,12 +656,9 @@ tr:
         desc_html: Kendi gizlilik politikanızı, hizmet şartlarınızı ya da diğer hukuki metinlerinizi yazabilirsiniz. HTML etiketleri kullanabilirsiniz
         title: Özel hizmet şartları
       site_title: Site başlığı
-<<<<<<< HEAD
       spam_check_enabled:
-        desc_html: metu.life, tekrar eden istenmeyen mesajlar gönderen hesapları otomatik olarak susturabilir ve şikayet edebilir. Yanlışlar olabilir.
+        desc_html: metu.life, tekrar eden istenmeyen mesajlar gönderen hesapları otomatik olarak susturabilir ve şikayet edebilir.
         title: Anti-spam otomasyonu
-=======
->>>>>>> glitch_origin/main
       thumbnail:
         desc_html: OpenGraph ve API ile ön izlemeler için kullanılır. 1200x630px tavsiye edilir
         title: Sunucu küçük resmi

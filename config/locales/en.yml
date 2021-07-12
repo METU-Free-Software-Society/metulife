@@ -1,13 +1,8 @@
 ---
 en:
   about:
-<<<<<<< HEAD
-    about_hashtag_html: These are public toots tagged with <strong>#%{hashtag}</strong>. You can interact with them if you have an account anywhere in the fediverse.
-    about_mastodon_html: 'The social network of the future: No ads, no corporate surveillance, ethical design, and decentralization! Own your data with metu.life!'
-=======
     about_hashtag_html: These are public posts tagged with <strong>#%{hashtag}</strong>. You can interact with them if you have an account anywhere in the fediverse.
     about_mastodon_html: 'The social network of the future: No ads, no corporate surveillance, ethical design, and decentralization! Own your data with Mastodon!'
->>>>>>> glitch_origin/main
     about_this: About
     active_count_after: active
     active_footnote: Monthly Active Users (MAU)
@@ -37,17 +32,11 @@ en:
     server_stats: 'Server stats:'
     source_code: Source code
     status_count_after:
-<<<<<<< HEAD
-      one: status
-      other: statuses
-    status_count_before: Who authored
-    tagline: Follow hocams and discover new ones
-=======
       one: post
       other: posts
     status_count_before: Who published
-    tagline: Follow friends and discover new ones
->>>>>>> glitch_origin/main
+    status_count_before: Who authored
+    tagline: Follow hocams and discover new ones
     terms: Terms of service
     unavailable_content: Moderated servers
     unavailable_content_description:
@@ -668,12 +657,9 @@ en:
         desc_html: You can write your own privacy policy, terms of service or other legalese. You can use HTML tags
         title: Custom terms of service
       site_title: Server name
-<<<<<<< HEAD
       spam_check_enabled:
         desc_html: metu.life can auto-report accounts that send repeated unsolicited messages. There may be false positives.
         title: Anti-spam automation
-=======
->>>>>>> glitch_origin/main
       thumbnail:
         desc_html: Used for previews via OpenGraph and API. 1200x630px recommended
         title: Server thumbnail
