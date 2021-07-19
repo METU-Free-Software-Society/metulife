@@ -43,7 +43,7 @@ const NavigationPanel = ({ onOpenSettings }) => (
     <p><FormattedMessage id='navigation_bar.radiostation' defaultMessage='Current radio station' />: <a id="current-radio" className='column-link--transparent' href='https://www.futuregeneration.net/' target='_blank'>FG</a></p>
     <hr />
     <a className='column-link column-link--transparent' href='https://think.metu.life' target='_blank'><Icon className='column-link__icon' id='lightbulb-o' fixedWidth /><FormattedMessage id='navigation_bar.think' defaultMessage='Think' /></a>
-    <a className='column-link column-link--transparent' href='https://discord.gg/p3j8H73Z6s' target='_blank'><Icon className='column-link__icon' id='comments-o' fixedWidth /><FormattedMessage id='navigation_bar.discord' defaultMessage='Discord Server' /></a>
+    <a className='column-link column-link--transparent' href='https://metu.wiki' target='_blank'><Icon className='column-link__icon' id='comments-o' fixedWidth /><FormattedMessage id='navigation_bar.wiki' defaultMessage='METU Wiki' /></a>
     <a className='column-link column-link--transparent' href='/about' target='_blank'><Icon className='column-link__icon' id='external-link' fixedWidth /><FormattedMessage id='navigation_bar.frontpage' defaultMessage='Show front page' /></a>
 
 

@@ -188,7 +188,7 @@ const NAVIGATION_PANEL_BREAKPOINT = 600 + (285 * 2) + (10 * 2);
 	    <p><audio style={{width: "285px"}} controls><source src="https://sc.vargonen.net:5001/;stream.mp3"></source></audio></p>
 	    <ColumnSubheading text={intl.formatMessage(messages.misc)} />
             <a className='column-link' href='/about' target='_blank'><Icon className='column-link__icon' id='lightbulb-o' fixedWidth /><FormattedMessage id='navigation_bar.think' defaultMessage='Think' /></a>
-            <a className='column-link' href='https://discord.gg/p3j8H73Z6s' target='_blank'><Icon className='column-link__icon' id='comments-o' fixedWidth /><FormattedMessage id='navigation_bar.discord' defaultMessage='Discord Server' /></a>
+            <a className='column-link' href='https://metu.wiki' target='_blank'><Icon className='column-link__icon' id='comments-o' fixedWidth /><FormattedMessage id='navigation_bar.wiki' defaultMessage='METU Wiki' /></a>
             <a className='column-link' href='/about' target='_blank'><Icon className='column-link__icon' id='external-link' fixedWidth /><FormattedMessage id='navigation_bar.frontpage' defaultMessage='Show front page' /></a>
 	    <NavLink className='column-link' to='/timelines/tag/2021METUSpringJournal'><Icon className='column-link__icon' id='hashtag' fixedWidth /><FormattedMessage id='navigation_bar.journal' defaultMessage='Spring Journal'></FormattedMessage></NavLink>
 
