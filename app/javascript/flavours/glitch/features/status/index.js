@@ -32,7 +32,7 @@ import { initBlockModal } from 'flavours/glitch/actions/blocks';
 import { initReport } from 'flavours/glitch/actions/reports';
 import { initBoostModal } from 'flavours/glitch/actions/boosts';
 import { makeGetStatus } from 'flavours/glitch/selectors';
-import { ScrollContainer } from 'react-router-scroll-4';
+import ScrollContainer from 'flavours/glitch/containers/scroll_container';
 import ColumnBackButton from 'flavours/glitch/components/column_back_button';
 import ColumnHeader from '../../components/column_header';
 import StatusContainer from 'flavours/glitch/containers/status_container';
@@ -405,7 +405,7 @@ class Status extends ImmutablePureComponent {
   handleHotkeyOpenProfile = () => {
     let state = {...this.context.router.history.location.state};
     state.mastodonBackSteps = (state.mastodonBackSteps || 0) + 1;
-    this.context.router.history.push(`/accounts/${this.props.status.getIn(['account', 'id'])}`, state);
+    this.context.router.history.push(`/@${this.props.status.getIn(['account', 'acct'])}`, state);
   }
 
   handleMoveUp = id => {
@@ -507,11 +507,6 @@ class Status extends ImmutablePureComponent {
     this.setState({ fullscreen: isFullscreen() });
   }
 
-  shouldUpdateScroll = (prevRouterProps, { location }) => {
-    if ((((prevRouterProps || {}).location || {}).state || {}).mastodonModalOpen) return false;
-    return !(location.state && location.state.mastodonModalOpen);
-  }
-
   render () {
     let ancestors, descendants;
     const { setExpansion } = this;
@@ -562,7 +557,7 @@ class Status extends ImmutablePureComponent {
           )}
         />
 
-        <ScrollContainer scrollKey='thread' shouldUpdateScroll={this.shouldUpdateScroll}>
+        <ScrollContainer scrollKey='thread'>
           <div className={classNames('scrollable', 'detailed-status__wrapper', { fullscreen })} ref={this.setRef}>
             {ancestors}
 
