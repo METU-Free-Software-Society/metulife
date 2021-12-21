@@ -38,6 +38,7 @@ const messages = defineMessages({
   lists: { id: 'navigation_bar.lists', defaultMessage: 'Lists' },
   lists_subheading: { id: 'column_subheading.lists', defaultMessage: 'Lists' },
   misc: { id: 'navigation_bar.misc', defaultMessage: 'Misc' },
+  recommendations: { id: 'navigation_bar.recommendations', defaultMessage: 'Recommendations' },
   menu: { id: 'getting_started.heading', defaultMessage: 'Getting started' },
   profile_directory: { id: 'getting_started.directory', defaultMessage: 'Profile directory' },
   radyoodtu: { id: 'navigation_bar.radio1', defaultMessage: 'Radyo ODTU' },
@@ -158,6 +159,8 @@ const NAVIGATION_PANEL_BREAKPOINT = 600 + (285 * 2) + (10 * 2);
       navItems.push(<ColumnLink key='7' icon='address-book' text={intl.formatMessage(messages.profile_directory)} to='/directory' />);
     }
 
+    navItems.push(<ColumnLink key='8' icon='plus-circle' text={intl.formatMessage(messages.recommendations)} to='/start' />);
+
     navItems.push(<ColumnLink key='8' icon='ellipsis-h' text={intl.formatMessage(messages.misc)} to='/getting-started-misc' />);
 
     listItems = listItems.concat([
@@ -187,10 +190,9 @@ const NAVIGATION_PANEL_BREAKPOINT = 600 + (285 * 2) + (10 * 2);
 	    <ColumnSubheading text={intl.formatMessage(messages.futuregeneration)} />
 	    <p><audio style={{width: "285px"}} controls><source src="https://sc.vargonen.net:5001/;stream.mp3"></source></audio></p>
 	    <ColumnSubheading text={intl.formatMessage(messages.misc)} />
-            <a className='column-link' href='/about' target='_blank'><Icon className='column-link__icon' id='lightbulb-o' fixedWidth /><FormattedMessage id='navigation_bar.think' defaultMessage='Think' /></a>
             <a className='column-link' href='https://metu.wiki' target='_blank'><Icon className='column-link__icon' id='comments-o' fixedWidth /><FormattedMessage id='navigation_bar.wiki' defaultMessage='METU Wiki' /></a>
             <a className='column-link' href='/about' target='_blank'><Icon className='column-link__icon' id='external-link' fixedWidth /><FormattedMessage id='navigation_bar.frontpage' defaultMessage='Show front page' /></a>
-	    <NavLink className='column-link' to='/timelines/tag/2021METUSpringJournal'><Icon className='column-link__icon' id='hashtag' fixedWidth /><FormattedMessage id='navigation_bar.journal' defaultMessage='Spring Journal'></FormattedMessage></NavLink>
+	    <NavLink className='column-link' to='/timelines/tag/METUJournal'><Icon className='column-link__icon' id='hashtag' fixedWidth /><FormattedMessage id='navigation_bar.journal' defaultMessage='METU Journal'></FormattedMessage></NavLink>
 
           </div>
 
