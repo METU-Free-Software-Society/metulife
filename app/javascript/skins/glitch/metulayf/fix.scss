@@ -219,7 +219,7 @@ button.column-header__button {
     background: #0c0c0c !important;
 }
 .composer--options--dropdown--content--item {
-    background: #080808 !important;
+    background: #080808;
     color: #edfcf5 !important;
 }
 .react-toggle-track {
@@ -229,6 +229,9 @@ button.column-header__button {
     color: #a81717 !important;
 }
 .composer--options--dropdown--content--item:hover span:first-child {
+    color: #edfcf5 !important;
+}
+.actions-modal ul li:not(:empty) a {
     color: #edfcf5 !important;
 }
 .composer--spoiler input {
@@ -289,6 +292,9 @@ confirmation-modal__do_not_ask_again {
     margin-right: 5px !important;
 }
 .compose-form__poll-wrapper .icon-button.disabled {
+    color: #3a3a3a !important;
+}
+.compose-form__poll-wrapper .icon-button {
     color: #a8171799 !important;
 }
 .compose-form__poll-wrapper {
@@ -522,4 +528,11 @@ button.column-header__button.active:hover {
 }
 .autosuggest-textarea__suggestions__item>.account.small .display-name>span {
     color: #909090 !important;
+}
+.composer--options--dropdown--content--item.active, .composer--options--dropdown--content--item:hover {
+    background: #a81717 !important;
+    color: #edfcf5 !important;
+}
+.react-toggle--checked .react-toggle-track {
+    background-color: #a81717 !important;
 }
