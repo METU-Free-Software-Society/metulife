@@ -27,7 +27,7 @@ RUN ARCH= && \
 	mv node-v$NODE_VER-linux-$ARCH /opt/node
 
 # Install Ruby 3.0
-ENV RUBY_VER="3.0.2"
+ENV RUBY_VER="3.0.3"
 RUN apt-get update && \
   apt-get install -y --no-install-recommends build-essential \
     bison libyaml-dev libgdbm-dev libreadline-dev libjemalloc-dev \
@@ -56,8 +56,8 @@ RUN npm install -g npm@latest && \
 COPY Gemfile* package.json yarn.lock /opt/mastodon/
 
 RUN cd /opt/mastodon && \
-  bundle config set deployment 'true' && \
-  bundle config set without 'development test' && \
+  bundle config set --local deployment 'true' && \
+  bundle config set --local without 'development test' && \
   bundle config set silence_root_warning true && \
 	bundle install -j"$(nproc)" && \
 	yarn install --pure-lockfile
